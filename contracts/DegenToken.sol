@@ -2,9 +2,9 @@
 pragma solidity ^0.8.18;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract DegenToken is ERC20, Ownable {
+contract DegenToken is ERC20 {
+    address owner;
     uint256 itemCount;
 
     struct MarketItem {
@@ -21,7 +21,13 @@ contract DegenToken is ERC20, Ownable {
     error IncorrectbetEntryPrice();
     error NoParticipants();
 
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner can mint");
+        _;
+    }
+
     constructor() ERC20("Degen", "DGN") {
+        owner = msg.sender;
     }
 
     function mint(address to, uint256 amount) public onlyOwner {

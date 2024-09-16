@@ -6,17 +6,24 @@ Simple overview of use/purpose.
 
 An in-depth paragraph about your project and overview of use.
 
+## Contract Address
+
+### **0x4a43dEcd347905FD7A368740482e2630d87fb929**
+
+### **[Contract address on Snowtrace](https://testnet.snowtrace.io/address/0x4a43dEcd347905FD7A368740482e2630d87fb929)**
+
 ## Getting Started
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+- How/where to download your program
+- Any modifications needed to be made to files/folders
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+- How to run the program
+- Step-by-step bullets
+
 ```
 code blocks for commands
 ```
@@ -24,6 +31,7 @@ code blocks for commands
 ## Help
 
 Any advise for common problems or issues.
+
 ```
 command to run if program contains helper info
 ```
@@ -34,7 +42,6 @@ Contributors names and contact info
 
 ex. Dominique Pizzie  
 ex. [@DomPizzie](https://twitter.com/dompizzie)
-
 
 ## License
 

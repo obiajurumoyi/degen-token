@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/mac/Documents/DegenToken/contracts/DegenToken.sol": {
-      "lastModificationDate": 1726112217185,
-      "contentHash": "99a4236fd1232a4fb95fb8c46e678f1b",
+      "lastModificationDate": 1726495729160,
+      "contentHash": "e94dde1f8427f98c703af7d0606088d3",
       "sourceName": "contracts/DegenToken.sol",
       "solcConfig": {
         "version": "0.8.18",
@@ -29,8 +29,7 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "@openzeppelin/contracts/access/Ownable.sol"
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
       ],
       "versionPragmas": [
         "^0.8.18"

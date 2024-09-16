@@ -1,5 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-require('dotenv').config();
+require("dotenv").config();
 
 const FORK_FUJI = false;
 const FORK_MAINNET = false;
@@ -27,7 +27,6 @@ module.exports = {
     },
     fuji: {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
-      gasPrice: 225000000000,
       chainId: 43113,
       accounts: [process.env.WALLET_PRIVATE_KEY], // we use a .env file to hide our wallets private key
     },
@@ -39,6 +38,19 @@ module.exports = {
     },
   },
   etherscan: {
-    apiKey: process.env.SNOWTRACE_API_KEY, // we use an .env file to hide our Snowtrace API KEY
+    apiKey: {
+      snowtrace: "snowtrace", // apiKey is not required, just set a placeholder
+    },
+    customChains: [
+      {
+        network: "snowtrace",
+        chainId: 43113,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/testnet/evm/43113/etherscan",
+          browserURL: "https://avalanche.testnet.localhost:8080",
+        },
+      },
+    ],
   },
 };
