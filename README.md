@@ -16,11 +16,11 @@ This contract is based on Solidity version 0.8.19 and uses the OpenZeppelin ERC2
 
 - `owner` - The address of the owner of the contract
 - `id` - A counter used to keep track of the last created item id
-- `items` - A mapping from `id` to `Item`, which allows to fetch item details using its id
+- `marketItems` - A mapping from `id` to `Item`, which allows to fetch item details using its id
 
 ### Structs
 
-- `Item` - Represents an item, which has an owner, an amount, and a name
+- `MarketItem` - Represents an item, which has an owner, an amount, and a name
 
 ### Functions
 
